@@ -1,0 +1,94 @@
+case=
+input=abc
+output="abc|
+"
+grade reduction=100%
+
+case=
+input=euRteRamo
+output="eu
+te
+amo|
+"
+grade reduction=100%
+
+case=
+input=euRamo<<<
+output="eu
+|amo
+"
+grade reduction=100%
+
+case=
+input=euRamo<<<<<<<como-
+output="como-|eu
+amo
+"
+grade reduction=100%
+
+case=
+input=euRemo<<Ba>>>>>>
+output="eu
+amo|
+"
+grade reduction=100%
+
+case=
+input=voc-ae<<v<<e>>>Di>
+output="voce-vai|
+"
+grade reduction=100%
+
+case=
+input=eu-te-amoB
+output="eu-te-am|
+"
+grade reduction=100%
+
+case=
+input=eu-te-amoBZ
+output="eu-te-amo|
+"
+grade reduction=100%
+
+case=
+input=eu-te-amoBZ<<braco
+output="eu-te-abraco|mo
+"
+grade reduction=100%
+
+case=
+input=abcZZd
+output="ad|
+"
+grade reduction=100%
+
+case=
+input=abcZZYd
+output="abd|
+"
+grade reduction=100%
+
+case=
+input=abcBZ
+output="abc|
+"
+grade reduction=100%
+
+case=
+input=abcBZZZZ
+output="|
+"
+grade reduction=100%
+
+case=
+input=abcBZZZZZZZZZZZZY
+output="a|
+"
+grade reduction=100%
+
+case=
+input=abcBZZZZZZZZZZZZYbYYYYY
+output="ab|
+"
+grade reduction=100%

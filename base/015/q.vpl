@@ -1,0 +1,40 @@
+case=
+input=abc
+output="abc|
+"
+grade reduction=100%
+
+case=
+input=euRteRamo
+output="eu
+te
+amo|
+"
+grade reduction=100%
+
+case=
+input=euRamo<<<
+output="eu
+|amo
+"
+grade reduction=100%
+
+case=
+input=euRamo<<<<<<<como-
+output="como-|eu
+amo
+"
+grade reduction=100%
+
+case=
+input=euRemo<<Ba>>>>>>
+output="eu
+amo|
+"
+grade reduction=100%
+
+case=
+input=voc-ae<<v<<e>>>Di>
+output="voce-vai|
+"
+grade reduction=100%

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@138 TODO (update xpaint) Labirinto Criando com Recursão video</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="todo-update-xpaint-labirinto-criando-com-recursão-video"><span class="citation" data-cites="138">@138</span> TODO (update xpaint) Labirinto Criando com Recursão video</h2>
+<h2 id="qxcode"><span class="citation" data-cites="qxcode">@qxcode</span></h2>
+<p>!toc</p>
+<!-- include (solver.c lang=c) -->
+<p>```c # include &lt;stdio.h&gt; # include &lt;stdbool.h&gt; # include &lt;stdlib.h&gt; # include &lt;time.h&gt; # include “xpaint.h”</p>
+<h1 id="include-xmat.h">include “xmat.h”</h1>
+<p>typedef struct _Pos{ int l; int c; } Pos;</p>
+<h1 id="define-get_neibsl-c-l-c---1-l---1-c-l-c-1-l-1-c">define get_neibs(l, c) {{l, c - 1}, {l - 1, c}, {l, c + 1}, {l + 1, c}}</h1>
+<p>void shuffle(Pos vet[], int size){ for(int i = 0; i &lt; size; i++){ int pos = rand() % size; Pos aux = vet[i]; vet[i] = vet[pos]; vet[pos] = aux; } }</p>
+<p>bool equals(int nl, int nc, char mat[nl][nc], int l, int c, char value){ if((l &lt; 0) || (l &gt;= nl) || (c &lt; 0) || (c &gt;= nc)) return false; return mat[l][c] == value; }</p>
+<p>bool eh_furavel(int nl, int nc, char mat[nl][nc], int l, int c){ if(!equals(nl, nc, mat, l, c, ‘#’)) return false; int cont = 0; Pos neibs[] = get_neibs(l, c); for(int i = 0; i &lt; 4; i++) if(equals(nl, nc, mat, neibs[i].l, neibs[i].c, ‘#’)) cont++; if(cont &lt; 3) return false; return true; }</p>
+<p>void furar(int nl, int nc, char mat[nl][nc], int l, int c){ if(!eh_furavel(nl, nc, mat, l, c)){ return; } mat[l][c] = ’ ’;</p>
+<pre><code>x_clear(WHITE);
+xmat_draw(nl, nc, mat);
+xmat_put_circle(l, c, GREEN);
+x_log(&quot;lab&quot;);
+
+Pos neibs[] = get_neibs(l, c);
+shuffle(neibs, 4);
+for(int i = 0; i &lt; 4; i++){
+    x_clear(WHITE);
+    xmat_draw(nl, nc, mat);
+    xmat_put_circle(neibs[i].l, neibs[i].c, YELLOW);
+    xmat_put_circle(l, c, GREEN);
+    xmat_put_number(neibs[i].l, neibs[i].c, WHITE, i);
+    x_log(&quot;lab&quot;);
+    furar(nl, nc, mat, neibs[i].l, neibs[i].c);    
+}
+mat[l][c] = &#39;x&#39;;
+x_clear(WHITE);
+xmat_draw(nl, nc, mat);
+xmat_put_circle(l, c, GREEN);
+x_log(&quot;lab&quot;);</code></pre>
+<p>}</p>
+<p>void show(int nl, int nc, char mat[nl][nc]){ for(int l = 0; l &lt; nl; l++){ for(int c = 0; c &lt; nc; c++){ if(mat[l][c] == ‘#’) printf(“█”); else printf(“%c”, mat[l][c]); } puts(""); } }</p>
+<p>void create_lab(int nl, int nc, char mat[nl][nc]){ char * p = &amp;mat[0][0]; for(int i = 0; i &lt; nl * nc; i++) p[i] = ‘#’; furar(nl, nc, mat, 1, 1); }</p>
+<p>int main(int argc, char * argv[]){ srand(time(NULL)); int nl = 20; int nc = 20;</p>
+<pre><code>if(argc &gt; 2){
+    nl = atoi(argv[1]);
+    nc = atoi(argv[2]);
+}
+
+char mat[nl][nc];
+xmat_init(nl, nc);
+xs_palette(&#39; &#39;, ORANGE);
+xs_palette(&#39;#&#39;, BLACK);
+xs_palette(&#39;x&#39;, WHITE);
+MAT_DELTA = 1;
+create_lab(nl, nc, mat);
+
+//printf(&quot;%d %d\n&quot;, nl, nc);
+//show(nl, nc, mat);
+x_close();</code></pre>
+<p>}``` <!-- /include --></p>
+</body>
+</html>

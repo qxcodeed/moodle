@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@018 TODO: Build Lista Simples</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="todo-build-lista-simples"><span class="citation" data-cites="018">@018</span> TODO: Build Lista Simples</h2>
+<p><img src="https://raw.githubusercontent.com/qxcodeed/moodle/master/base/018/__capa.jpg" /></p>
+<h1 id="implementações-de-lista-encadeada">Implementações de Lista Encadeada</h1>
+<p>Vamos trabalhar com implementações de listas simples e duplamente encadeadas, listas circulares.</p>
+<p>Compreender o funcionamento das <strong>listas simples</strong> é muito importante para nos preparar para trabalhar com árvores.</p>
+<ol type="1">
+<li>Listas Simples _______________- Implemente uma <em>Lista Encadeada Simples</em> com os seguintes métodos e teste o funcionamento da sua implementação.</li>
+</ol>
+<ul>
+<li><p>criar #cria uma lista vazia criar()</p>
+<pre><code>  #cria uma lista a partir de outra
+  #não utilize push_back
+  #realize m O(N)
+  clone(lista)</code></pre></li>
+<li><p>inserir #insere na frente da lista void push_front(value)</p>
+<pre><code>  #insere no fim da lista
+  void push_back(value)    </code></pre></li>
+<li><p>destruir #destrutor ou equivalente destroy()</p></li>
+<li><p>remover #retira o no da frente void pop_front()</p>
+<pre><code>  #retira o no do fundo
+  void pop_back()
+
+  #retira e retorna o primeiro no com esse valor
+  node remove(value)</code></pre></li>
+<li><p>acessar #retorna o primeiro no ou nulo node front()</p>
+<pre><code>  #retorna o ultimo no ou nulo
+  node back()</code></pre></li>
+<li><p>visualizar #mostra a lista entre [ ] void print()</p>
+<pre><code>  #mostra lista ao contrario
+  void reverse_print()    </code></pre></li>
+<li><p>manipular #retorna se lista vazia bool is_empty()</p>
+<pre><code>  #se o valor existir retorne o no
+  node find(value)
+
+  #retorna o tamanho da lista
+  int size()
+
+  #verifica se duas listas são iguais
+  bool equals(list_other)</code></pre></li>
+</ul>
+<ol start="2" type="1">
+<li>Lista Simples Ordenada _____________________– Listas Ordenadas são muito práticas por facilitar a busca de elementos na lista.</li>
+</ol>
+<p>Construa uma ListaSimplesOrdenada com os métodos da ListaSimples e as seguintes modificações.</p>
+<ul>
+<li>Remover os métodos push_back(value) push_front(value)</li>
+<li>Adicionar os métodos #insere o valor de forma ordenado na lista. insert(value)<br />
+</li>
+<li>Mantenha todos os outros métodos fazendo adaptações quando necessário. Ex: o método find não precisa mais procurar em todos os elementos.</li>
+</ul>
+<p>Nossa lista deve aceitar valores repetidos.</p>
+<ol start="3" type="1">
+<li>Lista Simples Circular _____________________–</li>
+</ol>
+<p>Listas circulares são extremamente úteis. Leia mais sobre Ring Buffer quando puder. Fica mais fácil se você usar um node sentinela para o início da lista. Assim o sentinela aponta para o primeiro elemento e o último elemento aponta para o sentinela.</p>
+<ul>
+<li><p>Métodos a remover void push_front(value) void push_back(value) void pop_front() void pop_back() node front() node back() bool equals(list_other)</p></li>
+<li><p>Métodos a alterar node remove(value) node find(value) void print() void reverse_print()</p></li>
+<li><p>Métodos a adaptar bool is_empty() int size()</p></li>
+</ul>
+<ol start="4" type="1">
+<li>Listas Simples Recursiva _______________-</li>
+</ol>
+<p>Adapte os métodos da lista simples para trabalhar apenas com recursão.</p>
+</body>
+</html>

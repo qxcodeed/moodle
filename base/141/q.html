@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@141 Estrutura de Dados e Algoritmos Ementa </title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="estrutura-de-dados-e-algoritmos-ementa-ready"><span class="citation" data-cites="141">@141</span> Estrutura de Dados e Algoritmos Ementa #ready</h2>
+<h2 id="qxcode"><span class="citation" data-cites="qxcode">@qxcode</span></h2>
+<h2 id="objetivos">Objetivos</h2>
+<ul>
+<li>Entender Complexidade</li>
+<li>Saber as vantagens e a desvantagem de cada estrutura e as variações de implementação.</li>
+<li>Ter contato com recursão e tipos de algoritmos recursivos.</li>
+<li>Construir as estruturas de dados em baixo nível
+<ul>
+<li>Array Dinâmico (vector)</li>
+<li>Lista
+<ul>
+<li>Sobre vetor: buffer, ring list</li>
+<li>Ligada: Simples, Lista Dupla, Lista Circular</li>
+</ul></li>
+<li>Stack e Queue</li>
+<li>Hash</li>
+<li>Árvore Binária e Binária de Busca</li>
+<li>Árvore N-ária</li>
+</ul></li>
+<li>Conhecer os algoritmos de busca e ordenação</li>
+<li>Saber utilizar as estruturas de alto nível oferecidas pela linguagem
+<ul>
+<li>vector</li>
+<li>list, stack, queue</li>
+<li>map (tree and hash)</li>
+<li>Ser capaz de manipular as estruturas (percorrer, inserir, remover, buscar)</li>
+</ul></li>
+<li>Resolver problemas que exigem o uso dessas estruturas</li>
+</ul>
+<h2 id="introdução-ao-c">Introdução ao C++</h2>
+<ul>
+<li>Classes</li>
+<li>Operador de referência e ponteiros</li>
+<li>Construtores e destrutores</li>
+<li>Sobrecarga de operadores</li>
+</ul>
+<h2 id="visão-superior">Visão superior</h2>
+<ul>
+<li>Introdução às estruturas em alto nível
+<ul>
+<li>Exemplo da utilização de cada estrutura (vector, list, set)</li>
+</ul></li>
+<li>Trabalhos
+<ul>
+<li>Comparação de Desempenho (inserção, remoção, busca) TODO
+<ul>
+<li>estruturas: vector ordenado, list ordenado, set</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="complexidade">Complexidade</h2>
+<ul>
+<li>Objetivos
+<ul>
+<li>Entender melhor, pior e caso médio</li>
+<li>Saber contar o número de instruções</li>
+<li>Saber comparar as ordens de Complexidade</li>
+<li>Compreender o significa de O(N)</li>
+</ul></li>
+<li>Trabalhos
+<ul>
+<li>Lista de exercícios</li>
+</ul></li>
+</ul>
+<h2 id="vector">Vector</h2>
+<ul>
+<li>Objetivos
+<ul>
+<li>Compreender o funcionamento de um vector</li>
+</ul></li>
+<li>Trabalho
+<ul>
+<li>Implementar vector em C</li>
+<li>Princesa em vetor</li>
+</ul></li>
+</ul>
+<h2 id="recursão">Recursão</h2>
+<ul>
+<li>Objetivos
+<ul>
+<li>Aprender os fundamentos de Recursão.</li>
+</ul></li>
+<li>Trabalhos
+<ul>
+<li>Recursão sobre vetores(min, max, soma, inversão)</li>
+<li>Torre</li>
+<li>Desenho de fractais em C, C++ ou Python</li>
+<li>Matrizes:
+<ul>
+<li>Preenchimento recursivo</li>
+<li>Recursivo aleatório</li>
+<li>Criar labirinto</li>
+<li>Encontrar caminho</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="busca-e-ordenação">Busca e Ordenação</h2>
+<ul>
+<li>Objetivos
+<ul>
+<li>Métodos de <strong>ordenação</strong>
+<ul>
+<li>Bubble, Insert, Selection (lineares)</li>
+<li>Merge, Quick (recursivos)</li>
+</ul></li>
+<li>Compreender e implementar os métodos de <strong>busca</strong> em VETOR
+<ul>
+<li>Busca Sequêncial, Binária. TODO</li>
+</ul></li>
+</ul></li>
+<li>Trabalhos
+<ul>
+<li>Implementação</li>
+</ul></li>
+</ul>
+<h2 id="lista-encadeada">Lista Encadeada</h2>
+<ul>
+<li>Objetivos
+<ul>
+<li>Compreender a estrutura e fundamentos das listas</li>
+<li>Lista implementada sobre vetor: pilha, buffer</li>
+<li>lista limples (interativa e recursiva)
+<ul>
+<li>lista ordenada</li>
+<li>lista circular</li>
+</ul></li>
+<li>lista dupla</li>
+</ul></li>
+<li>C++
+<ul>
+<li>list</li>
+<li>std::find</li>
+<li>iteradores</li>
+<li>construindo iterador para lista circular TODO</li>
+</ul></li>
+<li>Trabalhos
+<ul>
+<li>Implementações de lista</li>
+<li>Implementar Princesa com lista circular</li>
+<li>Simulação Bancária TODO</li>
+<li>Editor de Texto TODO</li>
+</ul></li>
+</ul>
+<h2 id="pilha">Pilha</h2>
+<ul>
+<li>Objetivos
+<ul>
+<li>Utilização de pilha como alternativa à recursão</li>
+<li>Estudar alguns algoritmos de pilha</li>
+</ul></li>
+<li>Trabalhos
+<ul>
+<li>Calcular parenteses e palindromes</li>
+<li>Criar labirinto com pilha</li>
+<li>Resolver labirinto com pilha TODO</li>
+</ul></li>
+</ul>
+<h2 id="filas">Filas</h2>
+<ul>
+<li>Objetivos
+<ul>
+<li>Utilização da fila como alternativa à recursão</li>
+<li>Estudar alguns algoritmos de fila</li>
+</ul></li>
+<li>Trabalhos
+<ul>
+<li>Implementar preenchimento de imagens com fila (floodfill)</li>
+<li>Encontrar menor caminho entre dois pontos (pathfinding)</li>
+</ul></li>
+</ul>
+<h2 id="hash">Hash</h2>
+<ul>
+<li>Objetivos
+<ul>
+<li>Compreender diferenças entre a implementação em árvore, vetor e hash.</li>
+<li>Aprender o funcionamento do hash
+<ul>
+<li>hash com lista</li>
+<li>hash com linear probing</li>
+<li>hash com quadratic probing</li>
+</ul></li>
+</ul></li>
+<li>Trabalhos
+<ul>
+<li>Implementacao das estruturas</li>
+<li>Contagem de palavras no texto utilizando hash</li>
+</ul></li>
+</ul>
+<h2 id="árvores-requisito-lista">Árvores (Requisito Lista)</h2>
+<ul>
+<li>Aprender os fundamentos de árvore como extensão de lista
+<ul>
+<li>Árvore Binária Pura
+<ul>
+<li>operações(buscas, min, max, soma, altura, largura)</li>
+</ul></li>
+<li>Árvore Binária de Busca
+<ul>
+<li>operações(buscas, min, max, soma, altura, largura)</li>
+</ul></li>
+<li>Árvore Heap (TALVEZ)</li>
+</ul></li>
+<li>Trabalhos
+<ul>
+<li>Jogo da Velha ou Soma 15 TODO</li>
+<li>Implementação da Binária</li>
+<li>Árvore de expressão</li>
+<li>Árvore de Decisão TODO</li>
+</ul></li>
+</ul>
+</body>
+</html>
