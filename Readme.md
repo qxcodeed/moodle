@@ -9,9 +9,9 @@
     - [03. List](#03-list)
     - [04. Stack](#04-stack)
     - [05. Queue](#05-queue)
-    - [06. Sort](#06-sort)
-    - [07. Hash](#07-hash)
-    - [08. Tree](#08-tree)
+    - [06. Tree](#06-tree)
+    - [07. Sort](#07-sort)
+    - [08. Hash](#08-hash)
 - [Trabalhos](#trabalhos)
     - [01. Vector and List](#01-vector-and-list)
     - [02. Recursion](#02-recursion)
@@ -57,17 +57,19 @@
 - [@011 L2 - Passeio de caminhão](moodle/base/011) 
 - [@019 L3 - Labirinto III - Fuga pelo menor caminho](moodle/base/019) 
 
-### 06. Sort
+### 06. Tree
+- [@044 L2 - Carregando árvore a partir de String](moodle/base/044) 
+- [@047 L2 - Mostrando árvore tabulada](moodle/base/047) 
+- [@046 L2 - Soma dos nós e Menor valor](moodle/base/046) 
+- [@045 L2 - Find, Altura e Profundidade](moodle/base/045) 
+- [@022 L2 - Caminhos para o nó](moodle/base/022) 
+
+### 07. Sort
 - [@021 TODO: Sort Quick Sort](moodle/base/021)  [](#todo #empty)
 - [@020 TODO: Sort Bubble Selection Insertion](moodle/base/020)  [](#todo #empty)
 
-### 07. Hash
+### 08. Hash
 
-### 08. Tree
-- [@044 L1 - Tree Serialize and Show](moodle/base/044) 
-- [@046 L1 - Tree Soma e Menor](moodle/base/046) 
-- [@045 L2 - Tree Altura e Nível](moodle/base/045) 
-- [@022 TODO: Tree Caminhos para o nó](moodle/base/022) 
 
 ## Trabalhos
 
