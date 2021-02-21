@@ -1,13 +1,13 @@
 # L2 - Carregando árvore a partir de String - Splitted files
 
 <!--TOC_BEGIN-->
-- [Descrição](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/048/#descrição)
-- [Testes](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/048/#testes)
-- [Ajuda](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/048/#ajuda)
-- [Arquivos](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/048/#arquivos)
-    - [Código do Estudante](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/048/#código-do-estudante)
-    - [lib.hpp](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/048/#libhpp)
-    - [main.cpp](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/048/#maincpp)
+- [Descrição](#descrição)
+- [Testes](#testes)
+- [Ajuda](#ajuda)
+- [Arquivos](#arquivos)
+    - [Código do Estudante](#código-do-estudante)
+    - [lib.hpp](#libhpp)
+    - [main.cpp](#maincpp)
 <!--TOC_END-->
 
 ![](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/048/__capa.jpg)

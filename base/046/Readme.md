@@ -1,8 +1,8 @@
 # L2 - Soma dos nós e Menor valor
 <!--TOC_BEGIN-->
-- [Descrição](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/046/#descrição)
-- [Testes](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/046/#testes)
-- [Código base](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/046/#código-base)
+- [Descrição](#descrição)
+- [Testes](#testes)
+- [Código base](#código-base)
 <!--TOC_END-->
 
 ![](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/046/__capa.jpg)

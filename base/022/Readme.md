@@ -1,10 +1,10 @@
 # L2 - Caminhos para o nó
 
 <!--TOC_BEGIN-->
-- [Descrição](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/022/#descrição)
-- [Exemplo](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/022/#exemplo)
-- [Testes](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/022/#testes)
-- [Código base](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/022/#código-base)
+- [Descrição](#descrição)
+- [Exemplo](#exemplo)
+- [Testes](#testes)
+- [Código base](#código-base)
 <!--TOC_END-->
 
 ![](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/022/__capa.jpg)

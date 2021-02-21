@@ -1,10 +1,10 @@
 # L2 - Mostrando árvore tabulada
 
 <!--TOC_BEGIN-->
-- [Descrição](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/047/#descrição)
-- [Testes](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/047/#testes)
-- [Ajuda](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/047/#ajuda)
-- [Código base](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/047/#código-base)
+- [Descrição](#descrição)
+- [Testes](#testes)
+- [Ajuda](#ajuda)
+- [Código base](#código-base)
 <!--TOC_END-->
 
 ![](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/047/__capa.jpg)

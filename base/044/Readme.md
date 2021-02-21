@@ -1,10 +1,10 @@
 # L2 - Carregando árvore a partir de String
 
 <!--TOC_BEGIN-->
-- [Descrição](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/044/#descrição)
-- [Testes](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/044/#testes)
-- [Ajuda](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/044/#ajuda)
-- [Código base](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/044/#código-base)
+- [Descrição](#descrição)
+- [Testes](#testes)
+- [Ajuda](#ajuda)
+- [Código base](#código-base)
 <!--TOC_END-->
 
 ![](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/044/__capa.jpg)

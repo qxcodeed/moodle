@@ -1,8 +1,8 @@
 # L2 - Find, Altura e Profundidade
 <!--TOC_BEGIN-->
-- [Descrição](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/045/#descrição)
-- [Código base](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/045/#código-base)
-- [Testes](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/045/#testes)
+- [Descrição](#descrição)
+- [Código base](#código-base)
+- [Testes](#testes)
 <!--TOC_END-->
 
 ![](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/045/__capa.jpg)
