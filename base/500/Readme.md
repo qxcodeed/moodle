@@ -7,18 +7,20 @@
     - [lib.hpp](#libhpp)
     - [main.cpp](#maincpp)
 - [Testes](#testes)
-<!--TOC_END-->
+<!--TOC_END--> 
 
-![](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/048/__capa.jpg)
 
-## Descrição
+![](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/500/__capa.jpg) 
 
-- Leia a string que representa a árvore serializada.
+## Descrição 
+
+- Leia a string que representa a árvore.
 - Você deve construir a árvore a partir da string implemetando corretamente o construtor do código de partida.
 - Você pode entender a lógica de serialização no seguinte [link](https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/).
-- A saída é a árvore percorrida in-order, mas já está implementado.
+ 
 
 
+ 
 ## Arquivos
 ### Código do Estudante
 ```cpp
@@ -154,3 +156,5 @@ void BTree::show_in_order(Node * node){
 [ 7 8 4 6 1 0 5 9 2 3 ]
 <<<<<<<<
 ```
+
+ 
