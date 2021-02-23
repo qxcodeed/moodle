@@ -4,8 +4,9 @@
 - [Descrição](#descrição)
 - [Arquivos](#arquivos)
     - [Código do Estudante](#código-do-estudante)
-    - [lib.hpp](#libhpp)
-    - [main.cpp](#maincpp)
+    - [lib.hpp](#lib.hpp)
+    - [lib.hpp](#lib-hpp)
+    - [main_cpp](#main_cpp)
 - [Testes](#testes)
 <!--TOC_END-->
 
@@ -31,7 +32,7 @@ BTree::BTree(string serial){
 }
 
 ```
-
+ 
 ### lib.hpp
 ```cpp
 #pragma once
@@ -64,7 +65,7 @@ private: //recursive
 };
 ```
 
-### main.cpp
+### main_cpp
 ```cpp
 
 #include <iostream>
