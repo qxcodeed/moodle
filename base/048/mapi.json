@@ -6,7 +6,21 @@
             "name": "vpl_evaluate.cases",
             "contents": "case=um\ninput=4 # # \noutput=\"[ 4 ]\n\"\ngrade reduction=100%\n\ncase=dois\ninput=1 # 0 # # \noutput=\"[ 1 0 ]\n\"\ngrade reduction=100%\n\ncase=tres\ninput=4 # 8 2 # # # \noutput=\"[ 4 2 8 ]\n\"\ngrade reduction=100%\n\ncase=quatro\ninput=0 9 4 # # # 5 # # \noutput=\"[ 4 9 0 5 ]\n\"\ngrade reduction=100%\n\ncase=cinco\ninput=0 4 # # 2 0 # # 3 # # \noutput=\"[ 4 0 0 2 3 ]\n\"\ngrade reduction=100%\n\ncase=seis\ninput=2 0 0 # # # 3 # 7 # 9 # # \noutput=\"[ 0 0 2 3 7 9 ]\n\"\ngrade reduction=100%\n\ncase=dez\ninput=1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # # \noutput=\"[ 7 8 4 6 1 0 5 9 2 3 ]\n\"\ngrade reduction=100%\n",
             "encoding": 0
+        },
+        {
+            "name": "solver.cpp",
+            "contents": "\n#include <iostream>\n#include <sstream>\n#include \"lib.hpp\"\n\nusing namespace std;\n\nint main(){\n    string line;\n    getline(cin, line);\n    BTree bt(line);\n    bt.show_in_order();\n}\n\nBTree::~BTree(){\n    destroy(this->root);\n}\n\nvoid BTree::show_in_order(){\n    cout << \"[ \";\n    show_in_order(root);\n    cout << \"]\\n\";\n}\n\nvoid BTree::destroy(Node * node){\n    if(node == nullptr)\n        return;\n    destroy(node->left);\n    destroy(node->right);\n    delete node;\n}\n    \n\nvoid BTree::show_in_order(Node * node){\n    if(node == nullptr)\n        return;\n    show_in_order(node->left);\n    cout << node->value << \" \";\n    show_in_order(node->right);\n}\n",
+            "encoding": 0
+        },
+        {
+            "name": "lib.hpp",
+            "contents": "#pragma once\n#include <iostream>\nusing namespace std;\n\nstruct Node{\n    int value;\n    Node * left;\n    Node * right;\n    Node(int value = 0, Node * left = nullptr, Node * right = nullptr){\n        this->value = value;\n        this->left = left;\n        this->right = right;\n    }\n};\n\nclass BTree{\npublic:\n    Node * root {nullptr};\n    BTree(string serial); //lib.hpp\n    ~BTree();\n    void bshow();\n    void show_in_order();\n\nprivate: //recursive\n    void destroy(Node * node);\n    void bshow(Node * node, string heranca);\n    void show_in_order(Node * node);\n};",
+            "encoding": 0
         }
     ],
-    "requiredFile": null
+    "requiredFile": {
+        "name": "student.cpp",
+        "contents": "#include <sstream>\n#include <iostream>\n#include \"lib.hpp\"\nusing namespace std;\n\n\nBTree::BTree(string serial){\n    //TODO\n}\n\n",
+        "encoding": 0
+    }
 }
