@@ -18,7 +18,6 @@
 - Você pode entender a lógica de serialização no seguinte [link](https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/).
 - A saída é a árvore percorrida in-order, mas já está implementado.
 
-
 ## Arquivos
 ### Código do Estudante
 ```cpp

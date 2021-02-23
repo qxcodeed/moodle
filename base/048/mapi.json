@@ -16,11 +16,17 @@
             "name": "lib.hpp",
             "contents": "#pragma once\n#include <iostream>\nusing namespace std;\n\nstruct Node{\n    int value;\n    Node * left;\n    Node * right;\n    Node(int value = 0, Node * left = nullptr, Node * right = nullptr){\n        this->value = value;\n        this->left = left;\n        this->right = right;\n    }\n};\n\nclass BTree{\npublic:\n    Node * root {nullptr};\n    BTree(string serial); //lib.hpp\n    ~BTree();\n    void bshow();\n    void show_in_order();\n\nprivate: //recursive\n    void destroy(Node * node);\n    void bshow(Node * node, string heranca);\n    void show_in_order(Node * node);\n};",
             "encoding": 0
+        },
+        {
+            "name": "lib.cpp",
+            "contents": "#include <sstream>\n#include <iostream>\n#include \"lib.hpp\"\nusing namespace std;\n\nvoid clone(stringstream& ss, Node ** elo){\n    string value;\n    ss >> value;\n    if(value == \"#\")\n        return;\n    int num;\n    stringstream(value) >> num;\n    *elo =  new Node(num);\n    clone(ss, &(**elo).left);\n    clone(ss, &(*elo)->right);\n}\n\nBTree::BTree(string serial){\n    stringstream ss(serial);\n    clone(ss, &root);\n}\n\n",
+            "encoding": 0
         }
     ],
     "requiredFile": {
         "name": "student.cpp",
         "contents": "#include <sstream>\n#include <iostream>\n#include \"lib.hpp\"\nusing namespace std;\n\n\nBTree::BTree(string serial){\n    //TODO\n}\n\n",
         "encoding": 0
-    }
+    },
+    "keep_size": 2
 }
