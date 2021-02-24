@@ -4,12 +4,12 @@
 
 <!--TOC_BEGIN-->
 - [Arquivos](#arquivos)
-    - [lib.hpp](#libhpp)
-    - [Outros arquivos](#outros-arquivos)
+- [Header](#header)
 - [Testes](#testes)
 <!--TOC_END-->
 
-Seja a implementação de uma lista ligada sem cabeça e sem rabo. Implemente as funções de
+Seja a uma lista ligada sem cabeça e sem rabo. Implemente as funções de:
+
 - push_back
 - push_front
 - pop_back
@@ -17,9 +17,14 @@ Seja a implementação de uma lista ligada sem cabeça e sem rabo. Implemente as
 - empty
 
 ## Arquivos
-### lib.hpp
+- [student.cpp](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/026/student.cpp)
+- [main.cpp](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/026/main.cpp)
+- [lib.hpp](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/026/lib.hpp)
+
+## Header
 <!--ADD lib.hpp cpp-->
 ```cpp
+//lib.hpp
 #pragma once
 #include <iostream>
 #include <sstream>
@@ -52,9 +57,7 @@ struct LinkedList{
 ```
 <!--ADD_END-->
 
-### Outros arquivos
-- [main.cpp](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/026/main.cpp)
-
+***
 ## Testes
 ```
 >>>>>>>>
