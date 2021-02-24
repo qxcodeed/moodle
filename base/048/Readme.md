@@ -4,9 +4,8 @@
 - [Descrição](#descrição)
 - [Arquivos](#arquivos)
     - [Código do Estudante](#código-do-estudante)
-    - [lib.hpp](#lib.hpp)
-    - [lib.hpp](#lib-hpp)
-    - [main_cpp](#main_cpp)
+    - [lib.hpp](#libhpp)
+    - [main.cpp](#maincpp)
 - [Testes](#testes)
 <!--TOC_END-->
 
@@ -19,8 +18,10 @@
 - Você pode entender a lógica de serialização no seguinte [link](https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/).
 - A saída é a árvore percorrida in-order, mas já está implementado.
 
+
 ## Arquivos
 ### Código do Estudante
+<!--ADD student.cpp cpp-->
 ```cpp
 #include <sstream>
 #include <iostream>
@@ -30,10 +31,12 @@ using namespace std;
 BTree::BTree(string serial){
     //TODO
 }
-
 ```
- 
+<!--ADD_END-->
+
+
 ### lib.hpp
+<!--ADD lib.hpp cpp-->
 ```cpp
 #pragma once
 #include <iostream>
@@ -64,10 +67,12 @@ private: //recursive
     void show_in_order(Node * node);
 };
 ```
+<!--ADD_END-->
 
-### main_cpp
+
+### main.cpp
+<!--ADD main.cpp cpp-->
 ```cpp
-
 #include <iostream>
 #include <sstream>
 #include "lib.hpp"
@@ -98,6 +103,7 @@ void BTree::destroy(Node * node){
     destroy(node->right);
     delete node;
 }
+    
 
 void BTree::show_in_order(Node * node){
     if(node == nullptr)
@@ -106,8 +112,10 @@ void BTree::show_in_order(Node * node){
     cout << node->value << " ";
     show_in_order(node->right);
 }
-
 ```
+<!--ADD_END-->
+
+
 
 ## Testes
 
