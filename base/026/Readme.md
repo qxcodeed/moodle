@@ -42,7 +42,7 @@ int  LinkedList::size(){
 ```
 <!--ADD_END-->
 
----
+***
 ### lib.hpp
 <!--ADD lib.hpp cpp-->
 ```cpp
@@ -79,7 +79,7 @@ struct LinkedList{
 <!--ADD_END-->
 
 
----
+***
 ### main.cpp
 <!--ADD main.cpp cpp-->
 ```cpp
