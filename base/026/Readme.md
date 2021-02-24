@@ -1,10 +1,11 @@
 # Build Linked List - push and pop
 
+![](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/026/capa.jpg)
+
 <!--TOC_BEGIN-->
 - [Arquivos](#arquivos)
-    - [student.cpp](#studentcpp)
     - [lib.hpp](#libhpp)
-    - [main.cpp](#maincpp)
+    - [Outros arquivos](#outros-arquivos)
 - [Testes](#testes)
 <!--TOC_END-->
 
@@ -16,33 +17,6 @@ Seja a implementação de uma lista ligada sem cabeça e sem rabo. Implemente as
 - empty
 
 ## Arquivos
-
-### student.cpp
-<!--ADD student.cpp cpp-->
-```cpp
-#include "lib.hpp"
-#include <iostream>
-using namespace std;
-
-void LinkedList::push_back(int value){
-
-}
-void LinkedList::push_front(int value){
-
-}
-void LinkedList::pop_back(){
-
-}
-void LinkedList::pop_front(){
-
-}
-int  LinkedList::size(){
-    return 0;
-}
-```
-<!--ADD_END-->
-
-***
 ### lib.hpp
 <!--ADD lib.hpp cpp-->
 ```cpp
@@ -78,74 +52,8 @@ struct LinkedList{
 ```
 <!--ADD_END-->
 
-
-***
-### main.cpp
-<!--ADD main.cpp cpp-->
-```cpp
-#include <iostream>
-#include <sstream>
-#include "lib.hpp"
-using namespace std;
-
-int main(){
-    LinkedList ll;
-    while(true){
-        string line, cmd;
-        int value;
-        getline(cin, line);
-        cout << "$" << line << endl;
-        stringstream ss(line);
-        ss >> cmd;
-        if(cmd == "end"){
-            break;
-        }else if(cmd == "show"){
-            cout << ll << endl;
-        }else if(cmd == "push_back"){
-            while(ss >> value)
-                ll.push_back(value);
-        }else if(cmd == "push_front"){
-            while(ss >> value)
-                ll.push_front(value);
-        }else if(cmd == "pop_back"){
-            ll.pop_back();
-        }else if(cmd == "pop_front"){
-            ll.pop_back();
-        }else if(cmd == "size"){
-            cout << ll.size() << endl;
-        }
-    }
-}
-
-LinkedList::LinkedList(){
-}
-
-void destroy(Node * node){
-    if(node == nullptr)
-        return;
-    else{
-        destroy(node->next);
-        delete(node);
-    }
-}
-
-LinkedList::~LinkedList(){
-    destroy(head);
-}
-ostream& operator<<(ostream& os, LinkedList& lista){
-    os << "[ ";
-    Node * node = lista.head;
-    while(node != nullptr){
-        os << node->value << " ";
-        node = node->next;
-    }
-    os << "]";
-    return os;
-}
-```
-<!--ADD_END-->
-
-
+### Outros arquivos
+- [main.cpp](https://raw.githubusercontent.com/qxcodeed/moodle/master/base/026/main.cpp)
 
 ## Testes
 ```
